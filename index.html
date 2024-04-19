@@ -9,8 +9,9 @@
 
 <body class="page page-index">
   <header class="page__header header">
-    <img class="header-logo" src="" alt="Логотип">
+    <a class="header__logo header-logo" href="index.html"><img class="header-logo__img" src="img/logo-desktop.svg" alt="Логотип" width="202" height="59"></a>
     <nav class="header__nav navigation">
+      <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--active"><a href="index.html">Главная</a></li>
         <li class="navigation__item"><a href="catalog.html">Каталог продукции</a></li>
@@ -20,25 +21,26 @@
   </header>
   <main class="page__content">
     <section class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
+      <h1 class="promo__title section-title section-title--l">Функциональное питание для котов</h1>
       <p class="promo__description">Занялся собой? Займись котом!</p>
-      <a class="promo__button-link" href="#">Подобрать программу</a>
-      <img class="promo__image" src="images/image.png" alt="Банка питания для котов Cat Energy Pro с курицей">
+      <a class="promo__button-link button-link" href="#">Подобрать программу</a>
+      <img class="promo__image" src="img/index-can.png" alt="Банка питания для котов Cat Energy Pro с курицей">
     </section>
     <section class="preferences">
+      <h2 class="preferences__title visually-hidden">Программы</h2>
       <article class="preferences__card preferences__card--slim card-index">
-        <h2 class="card-index__title">Похудение</h2>
+        <h3 class="card-index__title">Похудение</h3>
         <p class="card-index__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <a class="card-index__link">Каталог slim</a>
+        <a class="card-index__link" href="#">Каталог slim</a>
       </article>
       <article class="preferences__card card-index preferences__card--pro">
-        <h2 class="card-index__title">Набор массы</h2>
+        <h3 class="card-index__title">Набор массы</h3>
         <p class="card-index__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-        <a class="card-index__link">Каталог pro</a>
+        <a class="card-index__link" href="#">Каталог pro</a>
       </article>
     </section>
     <section class="features">
-      <h2 class="features__title">Как это работает</h2>
+      <h2 class="features__title section-title section-title--l">Как это работает</h2>
       <ul class="features__list">
         <li class="features__item features__item--first">Функциональное питание содержит только полезные питательные вещества.</li>
         <li class="features__item features__item--second">Выпускается в виде порошка, который нужно лишь залить кипятком, и готово.</li>
@@ -47,7 +49,7 @@
       </ul>
     </section>
     <section class="example">
-      <h2 class="example__title">Живой пример</h2>
+      <h2 class="example__title section-title section-title--l">Живой пример</h2>
       <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
       <ul class="example__list">
         <li class="example__item example-item">
@@ -69,19 +71,19 @@
     <section class="contacts">
       <img class="contacts__map">
       <div class="contacts__container">
-        <h3 class="contacts__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <h2 class="contacts__title section-title section-title--xs">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
       </div>
     </section>
   </main>
   <footer class="page__footer footer">
-    <img class="footer__logo">
+    <a class="footer__logo footer-logo" href="#"><img class="footer-logo__img" src="img/logo.svg"></a>
     <ul class="footer__social-list social-list">
-      <li class="social-list__item"></li>
-      <li class="social-list__item"></li>
-      <li class="social-list__item"></li>
+      <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/vk.svg"></a></li>
+      <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/yt.svg"></a></li>
+      <li class="social-list__item"><a class="social-list__link" href="#"><img src="img/tg.svg"></a></li>
     </ul>
-    <img class="footer__copyright">
+    <a class="footer__copyright copyright" href="#"><img class="copyright__img" src="img/html-academy.svg"></a>
   </footer>
 </body>
 
