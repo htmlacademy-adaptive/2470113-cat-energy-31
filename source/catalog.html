@@ -7,9 +7,9 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="page page-catalog">
+<body class="page">
   <header class="page__header header">
-    <a class="header__logo header-logo" href="index.html"><img class="header-logo__img" src="img/logo-desktop.svg" alt="Логотип" width="202" height="59"></a>
+    <a class="header__logo" href="index.html"><img src="img/logo-desktop.svg" alt="Логотип" width="202" height="59"></a>
     <nav class="header__nav navigation">
       <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <ul class="navigation__list">
@@ -19,7 +19,7 @@
       </ul>
     </nav>
   </header>
-  <main class="page__content main">
+  <main class="page__content">
     <h1 class="page__title section-title section-title--l">Товары в каталоге</h1>
     <section class="catalog">
       <ul class="catalog__list">
@@ -119,30 +119,30 @@
     <section class="addition">
       <h2 class="addition__title section-title section-title--m">Дополнительные товары</h2>
       <div class="addition__container">
-        <ul class="addition__table addition-table">
-          <li>
+        <ul class="addition__list addition-list">
+          <li class="addition-list__item">
             <span>Сахарозаменитель</span>
             <span>1 упаковка (100 г)</span>
             <span>200 ₽</span>
-            <span><button class="addition-table__button button-link">заказать</button></s>
+            <span><button class="addition-list__button button-link">заказать</button></s>
           </li>
-          <li>
+          <li class="addition-list__item">
             <span>Питьевая вода</s>
               <span>5 литров</span>
               <span>50 ₽</span>
               <span><button class="addition-table__button button-link">заказать</button></span>
           </li>
-          <li>
+          <li class="addition-list__item">
             <span>молоко</span>
             <span>1 литр</span>
             <span>100 ₽</span>
-            <span><button class="addition-table__button button-link">заказать</button></span>
+            <span><button class="addition-list__button button-link">заказать</button></span>
           </li>
-          <li>
+          <li class="addition-list__item">
             <span>витамины</span>
             <span>1 упаковка (30 г)</span>
             <span>300 ₽</span>
-            <span><button class="addition-table__button button-link">заказать</button></span>
+            <span><button class="addition-list__button button-link">заказать</button></span>
           </li>
         </ul>
         <div class="addition__gift addition-gift">
@@ -159,7 +159,7 @@
       </form>
     </section>
     <section class="contacts">
-      <img class="map">
+      <img class="contacts__map">
       <div class="contacts__container">
         <h2 class="contacts__title section-title section-title--sm">Приглашаем к сотрудничеству дилеров!</h2>
         <address class="contacts__address">ул. Большая Конюшенная, д. 19/8<br>Санкт-Петербург</address>
