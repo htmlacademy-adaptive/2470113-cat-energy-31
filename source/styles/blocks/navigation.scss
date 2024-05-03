@@ -1,0 +1,21 @@
+.navigation {
+  &__item a {
+    font-family: $secondary-font;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $secondary-color;
+    font-size: 20px;
+    line-height: 20px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    @media (min-width: 1440px) {
+      font-size: 20px;
+      line-height: 30px;
+      color: $primary-color;
+    }
+  }
+}
