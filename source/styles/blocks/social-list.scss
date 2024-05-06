@@ -1,0 +1,29 @@
+.social-list__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: #666666;
+}
+
+.social-list__link:hover {
+  background-color: $tertiary-color;
+}
+
+.social-list__link:active {
+  background-color: $tertiary-color;
+  opacity: 30%;
+}
+
+.social-list__link--yt {
+  mask-image: url("../../icons/stack.svg#logo_yt");
+}
+
+.social-list__link--tg {
+  mask-image: url("../../icons/stack.svg#logo_tg");
+}
+
+.social-list__link--vk {
+  mask-image: url("../../icons/stack.svg#logo_vk");
+}

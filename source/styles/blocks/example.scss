@@ -1,0 +1,32 @@
+.example__description {
+  @include font-default;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-tablet;
+    line-height: $line-height-tablet;
+  }
+}
+
+.example__text {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.example__price {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $secondary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

@@ -7,3 +7,37 @@
     font-display: swap;
   }
 }
+
+@mixin font-default () {
+  font-family: $primary-font;
+  font-size: $font-size-default;
+  line-height: $line-height-default;
+  color: $quinary-color;
+}
+
+@mixin title () {
+  font-family: $secondary-font;
+  color: $secondary-color;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+@mixin button-link () {
+  font-family: $secondary-font;
+  color: $primary-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: $tertiary-color;
+  text-align: center;
+}
+
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  padding: 0;
+}

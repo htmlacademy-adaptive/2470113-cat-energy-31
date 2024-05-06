@@ -1,0 +1,25 @@
+.addition-item {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $quinary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.addition-item__title {
+  font-family: $secondary-font;
+  color: $octonary-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
