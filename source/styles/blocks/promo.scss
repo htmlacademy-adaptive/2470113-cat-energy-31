@@ -1,0 +1,12 @@
+.promo__description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: $secondary-color;
+  }
+}
