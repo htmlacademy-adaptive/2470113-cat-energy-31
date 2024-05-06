@@ -1,8 +1,17 @@
+.promo__title {
+  color: $primary-color;
+
+  @media (min-width: $tablet-width) {
+    color: $secondary-color;
+  }
+}
+
 .promo__description {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   color: $primary-color;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;

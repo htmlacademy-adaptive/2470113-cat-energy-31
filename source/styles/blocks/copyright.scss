@@ -1,0 +1,30 @@
+.copyright {
+  text-decoration: none;
+}
+
+.copyright__text {
+  font-family: $quinary-color;
+  font-size: 16px;
+  line-height: 20px;
+  color: $quinary-color;
+  text-align: left;
+}
+
+.copyright__text:active {
+  opacity: 30%;
+}
+
+.copyright__text::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../images/html_academy.svg");
+  background-color: #666666;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.copyright__text:hover::after {
+  background-color: $tertiary-color;
+}

@@ -1,0 +1,38 @@
+.features__item {
+  @include font-default;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-tablet;
+    line-height: $line-height-tablet;
+  }
+}
+
+.features__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: $tertiary-color;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features__item--leaf::before {
+  background-image: url("../../icons/stack.svg#icon_leaf");
+  background-size: 25px;
+}
+
+.features__item--water::before {
+  background-image: url("../../icons/stack.svg#icon_water");
+  background-size: 26px;
+}
+
+.features__item--meal::before {
+  background-image: url("../../icons/stack.svg#icon_eat");
+  background-size: 25px;
+}
+
+.features__item--time::before {
+  background-image: url("../../icons/stack.svg#icon_time");
+  background-size: 26px;
+}

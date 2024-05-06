@@ -1,30 +1,14 @@
 .button-link {
-  background-color: $tertiary-color;
-  color: $primary-color;
-  font-family: $secondary-font;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
+  @include button-link;
   font-size: 16px;
   line-height: 20px;
 
-  @media (min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-
   &--l {
-    @media (min-width: $tablet-width) {
-      font-size: 20px;
-      line-height: 26px;
-    }
+    @include button-link;
+    font-size: 16px;
+    line-height: 20px;
 
-    @media (min-width: $desktop-width) {
+    @media (min-width: $tablet-width) {
       font-size: 20px;
       line-height: 26px;
     }

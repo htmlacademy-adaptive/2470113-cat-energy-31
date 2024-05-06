@@ -1,12 +1,21 @@
-.navigation {
+.navigation__toggle {
+  width: 24px;
+  height: 24px;
+  background-image: url("../../icons/stack.svg#icon_hamburger");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
 
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .navigation__item a {
-  font-family: $secondary-font;
-  text-transform: uppercase;
+  @include title;
+
   text-decoration: none;
-  color: $secondary-color;
   font-size: 20px;
   line-height: 20px;
 
@@ -19,5 +28,15 @@
     font-size: 20px;
     line-height: 30px;
     color: $primary-color;
+  }
+}
+
+.navigation__item--active {
+  @media (min-width: $tablet-width) {
+    text-decoration: underline;
+    text-decoration-color: $tertiary-color;
+    text-decoration-thickness: 2px;
+    text-underline-position: under;
+    text-underline-offset: 10px;
   }
 }

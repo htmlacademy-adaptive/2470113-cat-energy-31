@@ -1,0 +1,17 @@
+.footer__logo {
+  display: block;
+  width: 128px;
+  height: 24px;
+  mask-image: url("../../images/logo.svg");
+  background-color: $septenary-color;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.footer__logo:hover {
+  background-color: #3e3e3e;
+}
+
+.footer__logo:active {
+  background-color: #6b6b6b;
+}
