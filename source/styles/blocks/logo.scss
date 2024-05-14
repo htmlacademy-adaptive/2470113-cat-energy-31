@@ -1,0 +1,37 @@
+.logo {
+  text-decoration: none;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    align-items: start;
+  }
+}
+
+.logo img {
+  display: block;
+}
+
+.logo--pic {
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+}
+
+.logo--text {
+  margin: 0 auto;
+}
+
+.logo:hover {
+  opacity: 80%;
+}
+
+.logo:active {
+  opacity: 60%;
+}
+
+
+.logo__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

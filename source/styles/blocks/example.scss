@@ -1,5 +1,40 @@
+.example {
+  background-color: $quaternary-color;
+  width: 100%;
+}
+
+.example__container {
+  width: 100%;
+  padding: 25px 20px 40px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 45px 30px 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 110px 75px;
+    max-width: $desktop-width;
+  }
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
+}
+
 .example__description {
   @include font-default;
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-tablet;

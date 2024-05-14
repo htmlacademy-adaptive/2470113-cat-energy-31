@@ -1,9 +1,57 @@
+.features {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 20px 49px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0 30px 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: $desktop-width;
+    margin: 0 auto;
+    border-bottom: 0;
+    padding: 0 110px 69px;
+  }
+}
+
+.features__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+}
+
 .features__item {
   @include font-default;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-tablet;
     line-height: $line-height-tablet;
+    flex-direction: column;
+    max-width: 250px;
+    min-height: 280px;
+    padding-top: 40px;
+    align-items: flex-start;
   }
 }
 
@@ -15,6 +63,13 @@
   background-color: $tertiary-color;
   background-position: center;
   background-repeat: no-repeat;
+  margin-right: 20px;
+  flex-shrink: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 0;
+    margin-bottom: 31px;
+  }
 }
 
 .features__item--leaf::before {
