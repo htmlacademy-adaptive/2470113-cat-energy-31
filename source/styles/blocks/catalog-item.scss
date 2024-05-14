@@ -1,3 +1,7 @@
+.catalog-item {
+  background-color: $quaternary-color;
+}
+
 .catalog-item__title {
   @include title;
   font-size: 16px;

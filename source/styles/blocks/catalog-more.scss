@@ -1,3 +1,7 @@
+.catalog-more {
+  background-color: $primary-color;
+}
+
 .catalog-more .catalog-item__title::before {
   content: "";
   display: block;
