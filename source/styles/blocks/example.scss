@@ -1,6 +1,14 @@
 .example {
   background-color: $quaternary-color;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $primary-color 514px, $quaternary-color 514px, $quaternary-color 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, $primary-color 135px, $quaternary-color 135px, $quaternary-color 100%);
+  }
 }
 
 .example__container {
@@ -11,13 +19,16 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-flow: row wrap;
-    padding: 45px 30px 100px;
+    padding: 0 30px 100px;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
     padding: 0 110px 75px;
     max-width: $desktop-width;
+    display: grid;
+    grid-template-columns: 1fr 560px;
   }
 }
 
@@ -29,39 +40,79 @@
 
   @media (min-width: $desktop-width) {
     width: auto;
+    margin-bottom: 146px;
+    display: block;
+    grid-column: 1 / 2;
   }
 }
 
 .example__description {
   @include font-default;
-  margin-bottom: 25px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: $font-size-tablet;
     line-height: $line-height-tablet;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    grid-column: 1 / 2;
+    margin-bottom: 69px;
   }
 }
 
-.example__text {
+.example__list {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 34px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 100px;
+    margin-right: auto;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 366px;
+    grid-column: 1 / 2;
+    margin-bottom: 60px;
+  }
+}
+
+.example__money {
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 20px;
   color: $secondary-color;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  width: fit-content;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+    align-self: stretch;
+    justify-content: center;
+    margin-bottom: 99px;
+    flex-grow: 0;
   }
-}
 
-.example__price {
-  font-family: $secondary-font;
-  font-size: 14px;
-  line-height: 20px;
-  color: $secondary-color;
-
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 63px;
   }
 }

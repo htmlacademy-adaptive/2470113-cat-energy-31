@@ -8,6 +8,14 @@
   line-height: 20px;
   color: $quinary-color;
   text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .copyright__text:active {

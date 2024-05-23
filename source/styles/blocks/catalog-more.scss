@@ -1,5 +1,30 @@
 .catalog-more {
   background-color: $primary-color;
+  border-bottom: 1px solid #ebebeb;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    border: 2px solid #f2f2f2;
+  }
+}
+
+.catalog-more .catalog-item__title {
+  width: auto;
+  margin: 0 auto 8px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 26px;
+  }
 }
 
 .catalog-more .catalog-item__title::before {
@@ -7,6 +32,7 @@
   display: block;
   width: 30px;
   height: 30px;
+  margin: 0 auto 23px;
   background-image: url("../../icons/stack.svg#icon_plus");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -15,11 +41,29 @@
   @media (min-width: $tablet-width) {
     width: 60px;
     height: 60px;
+    margin: 50px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 50px auto 40px;
+  }
+}
+
+.catalog-more__description {
+  margin: 0 auto 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 40px auto;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 auto;
   }
 }
 
 .catalog-more__button {
   @include button-link;
-  background-color: $quaternary-color;
   color: $quinary-color;
+  background-color: #f2f2f2;
 }

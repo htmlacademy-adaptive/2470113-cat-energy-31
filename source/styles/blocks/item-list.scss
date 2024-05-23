@@ -3,9 +3,33 @@
   font-size: 12px;
   line-height: 16px;
   color: $quinary-color;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    margin-bottom: 32px;
+  }
+}
+
+.item-list__data {
+  font-family: $primary-font;
+  color: $quinary-color;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 7px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }

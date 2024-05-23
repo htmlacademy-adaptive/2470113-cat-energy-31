@@ -1,7 +1,30 @@
+
+
+.subscribe-form label {
+  flex-grow: 1;
+}
+
 .subscribe-form__input {
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 30px;
   color: $quinary-color;
   text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.subscribe-form__submit {
+  max-width: 100%;
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+  }
 }
