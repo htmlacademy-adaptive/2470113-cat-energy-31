@@ -3,11 +3,28 @@
   font-size: 14px;
   line-height: 20px;
   color: $quinary-color;
+  border-top: 1px solid #cdcdcd;
+  padding: 13px 0 19px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
     font-size: 16px;
     line-height: 20px;
+    border: 1px solid #cdcdcd;
+    padding: 26px 38px 28px;
+    border-bottom: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 15px 0 17px;
+  }
+}
+
+.addition-item:last-child {
+  border-bottom: 1px solid #cdcdcd;
 }
 
 .addition-item__title {
@@ -16,10 +33,54 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  display: block;
+  margin-bottom: 13px;
+  flex-basis: 100%;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    flex-basis: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
   }
 }
 
+.addition-item__weight {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 55px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.addition-item__price {
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.addition-item__button {
+  flex-basis: 100%;
+
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+    width: 244px;
+    margin-left: 40px;
+  }
+}

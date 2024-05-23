@@ -29,6 +29,11 @@
   text-decoration: none;
   background-color: $tertiary-color;
   text-align: center;
+  border: 0;
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 @mixin visually-hidden {

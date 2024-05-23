@@ -3,12 +3,13 @@
   padding: 0;
   background-color: $tertiary-color;
   background:
-    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 66%, $primary-color 66%, $primary-color 66%),
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 0%, rgba(104, 183, 56, 0.85) 63%, $primary-color 63%, $primary-color 66%),
     url("../../images/index-background-mobile.jpg") center/cover;
   background-repeat: no-repeat;
   background-size: 110% auto;
   background-position: top;
   margin-bottom: 20px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     background: none;
@@ -18,10 +19,10 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     background:
       linear-gradient(to right, $primary-color 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
-      url("../../images/index-background-desktop.jpg") center/contain;
+      url("../../images/index-background-desktop@1x.jpg") center/contain;
     background-position: right;
     background-repeat: no-repeat;
     margin-bottom: 82px;
@@ -31,7 +32,8 @@
 .promo__container {
   display: flex;
   flex-direction: column;
-  padding: 0;
+  box-sizing: border-box;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -44,7 +46,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     margin: 0 auto;
-    padding: 0 110px;
+    padding: 0 110px 52px;
   }
 }
 
@@ -52,7 +54,7 @@
 .promo__title {
   color: $primary-color;
   padding: 0;
-  margin: 27px 35px 25px;
+  margin: 27px 0 25px;
   order: 1;
   text-align: center;
 
@@ -77,7 +79,7 @@
   order: 2;
   text-align: center;
   padding: 0;
-  margin: 0 60px 29px;
+  margin: 0 0 29px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -93,9 +95,8 @@
 }
 
 .promo__button-link {
-  padding: 10px;
-  margin: 0 20px;
   order: 4;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     padding: 14px 26px;
@@ -106,24 +107,37 @@
   }
 
   @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 26px;
     margin: 0 auto 40px 80px;
+    padding: 14px 26px;
   }
 }
 
 .promo__image {
   order: 3;
-  display: block;
   margin: 0 auto;
+  padding: 0;
+  width: 280px;
+  height: 270px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
     order: 4;
     position: relative;
     top: -83px;
+    margin-bottom: 0;
+    width: 709px;
+    height: 609px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
     margin-top: 143px;
-    left: -180px;
     top: 0;
+    left: -180px;
   }
 }

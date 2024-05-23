@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-bottom: -4px;
+  width: 100%;
 }
 
 .contacts__map {
@@ -10,7 +12,7 @@
 
 .contacts__container {
   background-color: $primary-color;
-  padding: 25px 20px;
+  padding: 26px 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -56,10 +58,16 @@
   text-align: left;
   flex-basis: 50%;
   max-width: 163px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: right;
+    justify-content: space-between;
+    align-self: stretch;
   }
 
   @media (min-width: $desktop-width) {

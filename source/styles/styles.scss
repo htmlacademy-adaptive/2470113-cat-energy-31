@@ -5,6 +5,7 @@
 @import "./global/fonts.scss";
 @import "./common/common.scss";
 @import "./common/visually-hidden.scss";
+@import "./blocks/button-link.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
@@ -13,7 +14,6 @@
 @import "./blocks/navigation.scss";
 @import "./blocks/page.scss";
 @import "./blocks/promo.scss";
-@import "./blocks/button-link.scss";
 @import "./blocks/section-title.scss";
 @import "./blocks/preferences.scss";
 @import "./blocks/card-index.scss";
@@ -27,6 +27,7 @@
 @import "./blocks/footer-logo.scss";
 @import "./blocks/social-list.scss";
 @import "./blocks/copyright.scss";
+@import "./blocks/catalog.scss";
 @import "./blocks/catalog-item.scss";
 @import "./blocks/item-list.scss";
 @import "./blocks/catalog-more.scss";
