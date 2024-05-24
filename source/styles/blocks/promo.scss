@@ -22,8 +22,12 @@
     width: 100%;
     background:
       linear-gradient(to right, $primary-color 50%, rgba(104, 183, 56, 0.85) 50%, rgba(104, 183, 56, 0.85) 100%),
-      url("../../images/index-background-desktop@1x.jpg") center/contain;
-    background-position: right;
+      url("../../images/index-background-desktop@1x.jpg") center/contain,
+      linear-gradient(#4e4d53 0%, #4e4d53 100%);
+    background-position:
+      center,
+      calc(100% + 320px),
+      center;
     background-repeat: no-repeat;
     margin-bottom: 82px;
   }
