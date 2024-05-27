@@ -16,16 +16,16 @@
 }
 
 .catalog__title {
-  color: $secondary-color;
-  margin: 27px auto 41px 20px;
+  color: $title-color;
+  margin: 27px auto 40px 20px;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    margin: 65px auto 165px 30px;
+    margin: 40px auto 165px 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 65px auto 165px 0;
+    margin: 20px auto 165px 0;
   }
 }
 
@@ -43,7 +43,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    gap: 144px 80px;
+    gap: 143px 80px;
     grid-template-columns: repeat(4, 1fr);
   }
 }

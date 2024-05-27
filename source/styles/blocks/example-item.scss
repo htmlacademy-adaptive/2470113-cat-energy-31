@@ -31,7 +31,7 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
-  color: $quinary-color;
+  color: $font-color-primary;
   position: absolute;
   bottom: -17px;
   left: 0;
@@ -40,7 +40,7 @@
   display: flex;
   width: 87px;
   justify-content: center;
-  background-color: $quaternary-color;
+  background-color: $background-color-secondary;
   padding: 0 5px;
   box-sizing: border-box;
 
@@ -54,6 +54,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $quaternary-color;
+    background-color: $background-color-primary;
   }
 }

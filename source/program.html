@@ -9,6 +9,8 @@
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.ico"><!-- 16×16 -->
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 
 <body class="page">
@@ -30,13 +32,13 @@
           <img width="101" height="18" src="/images/logo.svg" alt="Логотип Cat Energy">
         </picture>
       </a>
-      <button class="logo-container__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="logo-container__toggle logo-container__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <nav class="header__nav navigation">
-      <ul class="navigation__list">
+      <ul class="navigation__list navigation__list--hidden">
         <li class="navigation__item"><a href="index.html">Главная</a></li>
-        <li class="navigation__item navigation__item--active"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="navigation__item"><a href="program.html">Подбор программы</a></li>
+        <li class="navigation__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="navigation__item navigation__item--active"><a href="program.html">Подбор программы</a></li>
       </ul>
     </nav>
   </header>
@@ -69,6 +71,7 @@
       </a>
     </div>
   </footer>
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

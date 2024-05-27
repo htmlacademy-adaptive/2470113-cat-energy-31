@@ -1,13 +1,13 @@
 .addition-gift {
   position: relative;
   background-color: rgba(104, 183, 56, 0.85);
-  margin: 0 20px 40px;
+  margin: 0 20px;
   min-height: 290px;
-  padding: 40px;
+  padding: 40px 40px 43px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    margin: 0 30px 80px;
+    margin: 0 30px;
     min-height: 200px;
     padding: 57px 0 60px;
   }
@@ -42,12 +42,11 @@
   margin: 0 auto;
   height: 100%;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     max-width: 100%;
     display: grid;
     margin: 0;
     align-items: center;
-    padding-left: 77px;
     grid-template-columns: 1fr 1fr;
   }
 
@@ -71,7 +70,7 @@
     width: 80px;
     height: 83px;
     margin: 0;
-    margin-right: auto;
+    margin-left: 77px;
   }
 
   @media (min-width: $desktop-width) {
@@ -92,7 +91,8 @@
   color: $primary-color;
   text-align: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
     text-align: left;
+    padding-left: 70px;
   }
 }

@@ -2,12 +2,24 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  margin-bottom: -4px;
   width: 100%;
 }
 
 .contacts__map {
+  height: 362px;
   order: 2;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
+}
+
+.contacts__map iframe {
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .contacts__container {
@@ -33,9 +45,16 @@
   }
 }
 
+.page--catalog .contacts__container {
+  @media (max-width: calc($desktop-width - 1px)) {
+    background-color: $background-color-primary;
+  }
+}
+
+
 .contacts__title {
   @include title;
-  color: $septenary-color;
+  color: $logo-color;
   font-size: 16px;
   line-height: 20px;
   max-width: 163px;
@@ -52,7 +71,7 @@
 .contacts__address {
   font-family: $primary-font;
   font-style: normal;
-  color: $quinary-color;
+  color: $font-color-primary;
   font-size: 14px;
   line-height: 20px;
   text-align: left;

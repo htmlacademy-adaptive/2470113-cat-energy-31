@@ -1,14 +1,14 @@
 .catalog-item {
   background-color: $primary-color;
   margin: 0;
-  padding: 20px 20px 25px;
-  border-top: 1px solid #ebebeb;
+  padding: 20px 20px 24px;
+  border-top: 1px solid $border-color-light;
   display: grid;
   grid-template-columns: 1fr 1fr;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    background-color: $quaternary-color;
+    background-color: $background-color-primary;
     grid-template-columns: 1fr;
     grid-template-rows: 161px auto auto auto;
     flex-grow: 1;
@@ -49,9 +49,13 @@
 }
 
 .catalog-item__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 107px;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    align-items: center;
     width: 200px;
     height: 210px;
   }
@@ -61,12 +65,10 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: $secondary-color;
-  display: flex;
+  color: $catalog-title-color;
   align-items: center;
 
-
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
   }
@@ -76,24 +78,28 @@
   @include title;
   font-size: 16px;
   line-height: 20px;
-  color: $octonary-color;
+  color: $catalog-title-color;
   grid-column: 2/3;
-  width: 76px;
   margin: 0;
   padding: 0;
   margin-bottom: 14px;
-  white-space: nowrap;
+  width: 76px;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 24px;
     grid-column: 1/2;
-    width: 140px;
     text-align: center;
-    margin: 0 auto 20px;
+    margin: 0 auto 13px;
     grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
+    width: 140px;
+  }
+}
+
+.catalog-item__title span:first-child::after {
+  @media (max-width: $tablet-width) {
+    content: " ";
+    color: inherit;
   }
 }
 
