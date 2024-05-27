@@ -1,13 +1,14 @@
 .catalog-more {
   background-color: $primary-color;
   border-bottom: 1px solid #ebebeb;
-  background: none;
   display: flex;
   flex-direction: column;
   align-items: center;
+  order: 10;
 
   @media (min-width: $tablet-width) {
-    border: 2px solid #f2f2f2;
+    border: 2px solid $background-color-primary;
+    padding: 0 36px 39px;
   }
 }
 
@@ -15,10 +16,14 @@
   width: auto;
   margin: 0 auto 8px;
   text-align: center;
+  color: $logo-color;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px;
     margin-bottom: 23px;
+    max-width: 134px;
+    display: flex;
+    flex-direction: column;
   }
 
   @media (min-width: $desktop-width) {
@@ -32,7 +37,7 @@
   display: block;
   width: 30px;
   height: 30px;
-  margin: 0 auto 23px;
+  margin: 5px auto 23px;
   background-image: url("../../icons/stack.svg#icon_plus");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -45,16 +50,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 50px auto 40px;
+    margin: 48px auto 40px;
   }
 }
 
 .catalog-more__description {
   margin: 0 auto 21px;
+  color: $font-color-primary;
+  font-size: 12px;
+  line-height: 16px;
 
   @media (min-width: $tablet-width) {
     margin: 0 40px auto;
     text-align: center;
+    font-size: 16px;
+    line-height: 18px;
   }
 
   @media (min-width: $desktop-width) {
@@ -64,6 +74,13 @@
 
 .catalog-more__button {
   @include button-link;
-  color: $quinary-color;
-  background-color: #f2f2f2;
+  color: $font-color-primary;
+  background-color: $background-color-primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: #ebebeb;
+    color: $font-color-primary;
+  }
 }

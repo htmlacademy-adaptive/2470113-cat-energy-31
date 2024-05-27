@@ -17,22 +17,25 @@
 }
 
 .social-list__link:hover {
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
 }
 
 .social-list__link:active {
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
   opacity: 30%;
 }
 
 .social-list__link--yt {
   mask-image: url("../../icons/stack.svg#logo_yt");
+  mask-size: 24px auto;
 }
 
 .social-list__link--tg {
   mask-image: url("../../icons/stack.svg#logo_tg");
+  mask-size: auto 17px;
 }
 
 .social-list__link--vk {
   mask-image: url("../../icons/stack.svg#logo_vk");
+  mask-size: auto 17px;
 }

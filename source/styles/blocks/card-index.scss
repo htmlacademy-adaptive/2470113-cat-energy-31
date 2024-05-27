@@ -1,5 +1,5 @@
 .card-index {
-  background-color: $quaternary-color;
+  background-color: $background-color-primary;
   padding: 24px 20px 18px;
   display: grid;
   grid-template-columns: 50px 1fr;
@@ -26,7 +26,7 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
   margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
@@ -139,10 +139,10 @@
   margin-bottom: 15px;
   grid-column: 1/-1;
   width: 100%;
+  color: $font-color-primary;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-tablet;
-    line-height: $line-height-tablet;
+    @include font-tablet;
     margin-bottom: 48px;
     grid-column: 1/2;
   }
@@ -193,7 +193,7 @@
 .card-index__link::after {
   display: block;
   content: "";
-  width: 32px;
+  width: 24px;
   height: 12px;
   background-image: url("../../icons/stack.svg#icon_arrow");
   background-repeat: no-repeat;
@@ -202,6 +202,12 @@
   margin-left: 15px;
 }
 
-.card-index__link:hover {
+.card-index__link:hover::after,
+.card-index__link:focus::after {
+  width: 32px;
+}
+
+.card-index__link:active {
   opacity: 30%;
 }
+

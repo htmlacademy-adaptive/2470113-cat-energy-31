@@ -51,10 +51,10 @@
   counter-increment: features 1;
   margin: 0;
   padding: 0;
+  color: $font-color-primary;
 
   @media (min-width: $tablet-width) {
-    font-size: $font-size-tablet;
-    line-height: $line-height-tablet;
+    @include font-tablet;
     flex-direction: column;
     max-width: 250px;
     min-height: 280px;
@@ -71,7 +71,7 @@
   display: block;
   width: 60px;
   height: 60px;
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
   background-position: center;
   background-repeat: no-repeat;
   margin-right: 20px;
@@ -95,7 +95,7 @@
     font-weight: 400;
     line-height: 280px;
     text-align: center;
-    color: $quaternary-color;
+    color: $background-color-primary;
     position: absolute;
     right: 0%;
     z-index: -1;

@@ -7,17 +7,35 @@ $desktop-width: 1440px;
 $primary-font: "Lato", sans-serif;
 $secondary-font: "Oswald", sans-serif;
 
-/* переменные цветов */
+/* переменные главных цветов */
 $primary-color: #ffffff;
-$secondary-color: #000000;
-$tertiary-color: #68b738;
-$quaternary-color: #f2f2f2;
-$quinary-color: #444444;
-$senary-color: #c4c4c4;
-$septenary-color: #111111;
-$octonary-color: #222222;
+$secondary-color: #68b738;
+$title-color: #000000;
+
+/* переменные цветов фона */
+$background-color-primary: #f2f2f2;
+$background-color-secondary: #eaeaea;
 
 
+/* переменные цветов шрифтов и элементов */
+$font-color-primary: #444444;
+$font-color-secondary: #c4c4c4;
+$logo-color: #111111;
+$catalog-title-color: #222222;
+$social-color: #666666;
+
+$border-color: #cdcdcd;
+$border-color-light: #e6e6e6;
+
+$secondary-hover: #5eaa2f;
+
+$logo-hover: #3e3e3e;
+$logo-pressed: #6b6b6b;
+
+$error-color: #ff8282;
+
+
+/* размеры базового шрифта */
 $font-size-default: 14px;
 $line-height-default: 18px;
 $font-size-tablet: 16px;

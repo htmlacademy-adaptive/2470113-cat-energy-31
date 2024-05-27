@@ -2,7 +2,7 @@
   font-family: $primary-font;
   font-size: 12px;
   line-height: 16px;
-  color: $quinary-color;
+  color: $font-color-primary;
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
@@ -16,7 +16,7 @@
 
 .item-list__data {
   font-family: $primary-font;
-  color: $quinary-color;
+  color: $font-color-primary;
   font-size: 12px;
   line-height: 16px;
   text-align: center;
@@ -29,7 +29,24 @@
     font-size: 16px;
     line-height: 18px;
     margin-top: 7px;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 9.5px;
+  }
+}
+
+.item-list__data:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    padding: 0 0 8px;
+  }
+}
+
+.item-list__data:last-child {
+  @media (min-width: $desktop-width) {
+    margin-top: 5px;
+    padding: 0 0 11px;
   }
 }

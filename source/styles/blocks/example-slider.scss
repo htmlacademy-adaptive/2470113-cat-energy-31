@@ -1,13 +1,13 @@
 .example-slider {
   position: relative;
-  width: 100%;
+  width: 280px;
   aspect-ratio: 280 / 256 auto;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     width: 560px;
     height: 512px;
     flex-basis: 100%;
-    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -19,7 +19,7 @@
 }
 
 .example-slider__img {
-  width: 100%;
+  width: 280px;
   aspect-ratio: 280 / 256 auto;
 
   @media (min-width: $tablet-width) {

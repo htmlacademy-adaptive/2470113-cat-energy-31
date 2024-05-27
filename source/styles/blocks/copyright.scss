@@ -1,20 +1,25 @@
 .copyright {
   text-decoration: none;
-}
-
-.copyright__text {
-  font-family: $quinary-color;
-  font-size: 16px;
-  line-height: 20px;
-  color: $quinary-color;
-  text-align: left;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 
   @media (min-width: $tablet-width) {
     width: 168px;
+  }
+}
+
+.copyright__text {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-color-primary;
+  text-align: left;
+  flex-direction: row;
+  gap: 23px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
   }
 }
 
@@ -31,8 +36,12 @@
   background-color: #666666;
   mask-repeat: no-repeat;
   mask-position: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 1.5px 0;
+  }
 }
 
 .copyright__text:hover::after {
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
 }

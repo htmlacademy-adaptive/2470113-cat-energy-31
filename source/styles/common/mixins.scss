@@ -12,12 +12,17 @@
   font-family: $primary-font;
   font-size: $font-size-default;
   line-height: $line-height-default;
-  color: $quinary-color;
+}
+
+@mixin font-tablet () {
+  font-family: $primary-font;
+  font-size: $font-size-tablet;
+  line-height: $line-height-tablet;
 }
 
 @mixin title () {
   font-family: $secondary-font;
-  color: $secondary-color;
+  color: $title-color;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -27,13 +32,26 @@
   color: $primary-color;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: $tertiary-color;
+  background-color: $secondary-color;
   text-align: center;
   border: 0;
   padding: 10px;
   display: block;
   box-sizing: border-box;
   width: 100%;
+
+  &:hover {
+    background-color: $secondary-hover;
+  }
+
+  &:focus {
+    background-color: $secondary-hover;
+    outline: none;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @mixin visually-hidden {
