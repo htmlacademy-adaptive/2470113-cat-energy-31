@@ -125,7 +125,7 @@
   }
 } */
 
-.features__item::before {
+.features__item--leaf::before {
   background-image: url("../../icons/stack.svg#icon_leaf");
   background-size: 25px;
 }
