@@ -21,7 +21,7 @@
   box-sizing: border-box;
   background-size: 24px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right;
   background-color: transparent;
   border: 0;
 
@@ -31,9 +31,9 @@
 }
 
 .logo-container__toggle--closed {
-  background-image: url("../../icons/stack.svg#icon_hamburger");
+  background-image: url("../../icons/stack.svg#icon-hamburger");
 }
 
 .logo-container__toggle--opened {
-  background-image: url("../../icons/stack.svg#icon_close");
+  background-image: url("../../icons/stack.svg#icon-close");
 }
