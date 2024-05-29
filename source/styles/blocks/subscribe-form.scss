@@ -1,0 +1,47 @@
+
+
+.subscribe-form label {
+  flex-grow: 1;
+}
+
+.subscribe-form__input {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 30px;
+  color: $font-color-primary;
+  text-transform: uppercase;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  padding: 12px;
+  border: 1px solid #e7e7e7;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    border-color: $border-color;
+  }
+
+  &:focus {
+    border: 1px solid $font-color-primary;
+    outline: none;
+  }
+}
+
+.subscribe-form__input--error {
+  border-color: $error-color;
+}
+
+
+.subscribe-form__submit {
+  max-width: 100%;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 15px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 256px;
+  }
+}

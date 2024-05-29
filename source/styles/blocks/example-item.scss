@@ -1,0 +1,59 @@
+.example-item {
+  position: relative;
+}
+
+.example-item__key {
+  @include title;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  display: flex;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  width: 124px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    width: 162px;
+    min-height: 72px;
+  }
+}
+
+.example-item__notice {
+  font-family: $primary-font;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: $font-color-primary;
+  position: absolute;
+  bottom: -17px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: flex;
+  width: 87px;
+  justify-content: center;
+  background-color: $background-color-secondary;
+  padding: 0 5px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: fit-content;
+    padding: 0 9px;
+    bottom: -5px;
+    background-color: $primary-color;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $background-color-primary;
+  }
+}

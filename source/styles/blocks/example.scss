@@ -1,0 +1,118 @@
+.example {
+  background-color: $background-color-secondary;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(to bottom, $primary-color 514px, $background-color-secondary 514px, $background-color-secondary 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to bottom, $primary-color 135px, $background-color-primary 135px, $background-color-primary 100%);
+  }
+}
+
+.example__container {
+  width: 100%;
+  padding: 25px 20px 40px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0 30px 100px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding: 0 110px 75px;
+    max-width: $desktop-width;
+    display: grid;
+    grid-template-columns: 1fr 560px;
+  }
+}
+
+.example__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    margin-bottom: 146px;
+    display: block;
+    grid-column: 1 / 2;
+  }
+}
+
+.example__description {
+  @include font-default;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $font-size-tablet;
+    line-height: $line-height-tablet;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    grid-column: 1 / 2;
+    margin-bottom: 69px;
+  }
+}
+
+.example__list {
+  margin: 0 auto;
+  padding: 0;
+  margin-bottom: 34px;
+  justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 100px;
+    margin-right: auto;
+    flex-grow: 1;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 366px;
+    grid-column: 1 / 2;
+    margin-bottom: 60px;
+  }
+}
+
+.example__money {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $title-color;
+  text-transform: uppercase;
+  margin: 0 auto 20px;
+  width: fit-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
+    align-self: stretch;
+    justify-content: center;
+    margin-bottom: 99px;
+    flex-grow: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 63px;
+  }
+}

@@ -1,0 +1,39 @@
+.logo-container {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    width: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+  }
+}
+
+.logo-container__toggle {
+  width: 33px;
+  height: 38px;
+  padding: 0;
+  box-sizing: border-box;
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  border: 0;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.logo-container__toggle--closed {
+  background-image: url("../../icons/stack.svg#icon_hamburger");
+}
+
+.logo-container__toggle--opened {
+  background-image: url("../../icons/stack.svg#icon_close");
+}

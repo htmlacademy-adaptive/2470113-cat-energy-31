@@ -1,0 +1,117 @@
+.addition-item {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 20px;
+  color: $font-color-primary;
+  border-top: 1px solid $border-color;
+  padding: 13px 0 18px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0;
+
+  @media (min-width: $tablet-width) and (max-width: calc($desktop-width - 1px)) {
+    display: grid;
+    grid-template-columns: 1fr auto 93px;
+    font-size: 16px;
+    line-height: 20px;
+    border: 1px solid $border-color;
+    padding: 26px 38px 27px;
+    border-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 286px 200px 1fr 244px;
+    gap: 40px;
+    padding: 15px 0 16px;
+  }
+}
+
+.addition-item:last-child {
+  border-bottom: 1px solid $border-color;
+}
+
+.addition-item__title {
+  font-family: $secondary-font;
+  color: $logo-color;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 13px;
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    flex-basis: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 3px;
+    margin-right: 0;
+  }
+}
+
+.addition-item__weight {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 2/3;
+    text-align: end;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 3px;
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
+
+.addition-item__price {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    font-size: 16px;
+    line-height: 20px;
+    grid-column: 3/4;
+    text-align: end;
+    margin-right: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 3px 0 0 2px;
+    text-align: start;
+  }
+}
+
+.addition-item__button {
+  flex-basis: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: auto;
+    width: 244px;
+    grid-column: 4/5;
+  }
+}
