@@ -1,13 +1,8 @@
 .contacts-map__pic {
   display: flex;
   justify-content: center;
-  width: 100%;
-  position: relative;
-
-  @media (min-width: $desktop-width) {
-    width: 1440px;
-    margin: 0 auto;
-  }
+  max-width: $desktop-width;
+  margin: 0 auto;
 }
 
 .contacts-map__pic::after {
